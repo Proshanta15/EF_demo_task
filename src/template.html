@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="header_skew" class="header">
+      <div class="logo">
+        <a href=""> <img id="logo" alt="" /></a>
+      </div>
+      <div class="top_menu">
+        <ul>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Pre-orders</a></li>
+          <li><a href="">Upcoming</a></li>
+          <li><a href="">Support 24/7</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <div class="card_icon">
+          <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card_user">
+          <a href=""><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+
+      <div class="header_menu">
+        <div class="menu_one">
+          <ul>
+            <li onclick="menu_two_show()">
+              <span><i class="fa-solid fa-display"></i></span><span>PC</span><span><i
+                  class="fa-solid fa-chevron-down"></i></span>
+            </li>
+            <li>
+              <span><i class="fa-brands fa-playstation"></i></span><span>Playstation</span><span><i
+                  class="fa-solid fa-chevron-down"></i></span>
+            </li>
+            <li>
+              <span><i class="fa-brands fa-xbox"></i></span><span>Xbox</span><span><i
+                  class="fa-solid fa-chevron-down"></i></span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-shekel-sign"></i></span><span>Nintendo</span><span><i
+                  class="fa-solid fa-chevron-down"></i></span>
+            </li>
+          </ul>
+          <div class="search" onclick="showDiv()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="click_search" id="sarch_open" style="display: none;">
+            <input type="text" placeholder="Minicraft, RPG, multiplayer...">
+            <small>Advanced search</small>
+            <i class="fa-solid fa-xmark" onclick="hide_search()"></i>
+          </div>
+        </div>
+        <div class="menu_two" style="display: none;" id="menu_two_show_div">
+          <div class="menu_two_top">
+            <div class="menu_two_title">
+              <p>Platforms</p>
+              <button>View all</button>
+            </div>
+            <div class="menu_two_top_list">
+              <ul>
+                <li><a href=""><span><img id="menu_two_1" alt=""></span><span>Steam</span></a></li>
+                <li><a href=""><span><img id="menu_two_2" alt=""></span><span>Ubisoft Connect</span></a></li>
+                <li><a href=""><span><img id="menu_two_3" alt=""></span><span>EA App</span></a></li>
+                <li><a href=""><span><img id="menu_two_4" alt=""></span><span>Battle.net</span></a></li>
+                <li><a href=""><span><img id="menu_two_5" alt=""></span><span>Rockstar</span></a></li>
+                <li><a href=""><span><img id="menu_two_6" alt=""></span><span>GOG.com</span></a></li>
+                <li><a href=""><span><img id="menu_two_7" alt=""></span><span>Microsoft Store</span></a></li>
+                <li><a href=""><span><img id="menu_two_8" alt=""></span><span>Epic</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu_two_bottom">
+            <div class="menu_two_title">
+              <p>Prepaid cards</p>
+              <button>View all</button>
+            </div>
+            <div class="menu_two_bottom_list">
+              <ul>
+                <li><a href="">
+                    <span><img id="menu_two_11" alt="">STEAM</span>
+                    <p>Steam Gift Cards</p>
+                  </a></li>
+                <li><a href="">
+                    <span><img id="menu_two_12" alt=""></span>
+                    <p>IG Gift Cards</p>
+                  </a></li>
+                </p>
+                </a></li>
+                <li><a href="">
+                    <span><img id="menu_two_13" alt=""></span>
+                    <p>Bilzzard Gift Cards</p>
+                  </a></li>
+                </p>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_text">
+        <div class="text_top">
+          <small>In 15 days</small>
+          <h4>Starfield Digital premium edition + early access</h4>
+        </div>
+        <div class="text_bottom">
+          <div class="item_discount">
+            <p>-25%</p>
+          </div>
+          <div class="item_dis_price">
+            <h3>74.89&euro;</h3>
+          </div>
+        </div>
+      </div>
+      <div class="header_text_2">
+        <a href=""><span style="letter-spacing: 5px;">+ early access</span></a>
+      </div>
+    </div>
+    <div id="item_skew" class="items">
+      <div class="item_title">
+        <h6>Trending</h6>
+        <button>View all</button>
+      </div>
+      <div class="item_part">
+        <div class="item">
+          <a href="">
+            <div class="item_img">
+              <img id="image1" alt="" />
+              <div class="item_discount">
+                <p>-26%</p>
+              </div>
+            </div>
+            <div class="item_text">
+              <p>Sengoku Dynasty</p>
+              <h6>19.99&euro;</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="">
+            <div class="item_img">
+              <img id="image2" alt="" />
+              <div class="item_discount">
+                <p>-23%</p>
+              </div>
+            </div>
+            <div class="item_text">
+              <p><span>DLC</span> The Sims 4 Horse Ranch</p>
+              <h6>19.99&euro;</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="">
+            <div class="item_img">
+              <img id="image3" alt="" />
+              <div class="item_discount">
+                <p>-30%</p>
+              </div>
+            </div>
+            <div class="item_text">
+              <p>Remnant</p>
+              <h6>34.89&euro;</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /*------ For Search Input Open ------*/
+    function showDiv() {
+      document.getElementById('sarch_open').style.display = "flex";
+    }
+  /********* For Search Input hide ********/
+    function hide_search() {
+      document.getElementById('sarch_open').style.display = "none";
+    }
+ /********* For Menu Bar Show & Hide ********/
+    function menu_two_show() {
+      var x = document.getElementById("menu_two_show_div");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
